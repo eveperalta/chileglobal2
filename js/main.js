@@ -20,14 +20,17 @@ jQuery(function($) {'use strict',
 	//Initiat WOW JS
 	new WOW().init();
 
-	// Contact form
+	//Contact form
 	var form = $('#main-contact-form');
 	form.submit(function(event){
 		event.preventDefault();
 		var form_status = $('<div class="form_status"></div>');
 		$.ajax({
-			url: $(this).attr('action'),
-
+					type:"POST",
+                    url:"sendemail.php",
+                    data: $("#contact").serialize(),
+                    success:function(result)
+                }
 			beforeSend: function(){
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
@@ -35,7 +38,6 @@ jQuery(function($) {'use strict',
 			form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
 		});
 	});
-
 	
 	//goto top
 	$('.gototop').click(function(event) {
@@ -45,9 +47,9 @@ jQuery(function($) {'use strict',
 		}, 500);
 	});	
 
-	//Pretty Photo
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});	
 
-});
+//shut down menu
+$(
+ '.navbar-collapse ul li a').click(function() {
+         $('.navbar-collapse').collapse('hide');
+ })

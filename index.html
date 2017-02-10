@@ -43,7 +43,7 @@
             </div><!--/.container-->
         </div><!--/.top-bar-->
 
-        <nav class="navbar navbar-inverse" role="banner">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -421,8 +421,8 @@
     <section id="partner">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>Clientes</h2>
-                <h3 style="color: #fff">Confían en nosotros</h3>
+                
+                <h2 style="color: #fff">Confían en nosotros</h2>
             </div>    
 
             <div class="partners">
@@ -473,7 +473,7 @@
                             <li><a href="#">Contact us</a></li>
                         </ul>
                     </div>    
-                </div><!--/.col-md-3-->
+                </div><!/.col-md-3-->
 
            <!--     <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -488,7 +488,7 @@
                             <li><a href="#">Billing system</a></li>
                         </ul>
                     </div>    
-                </div><!--/.col-md-3-->
+                </div><!/.col-md-3-->
 
             <!--    <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -503,7 +503,7 @@
                             <li><a href="#">Article Writing</a></li>
                         </ul>
                     </div>    
-                </div><!--/.col-md-3-->
+                </div><!/.col-md-3-->
 
              <!--   <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -518,19 +518,19 @@
                             <li><a href="#">Laboris</a></li>
                         </ul>
                     </div>    
-                </div><!--/.col-md-3-->
+                </div><!/.col-md-3-->
             </div>
         </div>
     </section><!--/#bottom-->
     <div class="container">
-      <form class="well form-horizontal" action=" " method="post"  id="main-contact-form">
+      <form class="well form-horizontal" action="sendemail.php " method="post"  id="main-contact-form">
         <fieldset>
 
           <!-- Form Name -->
-          <legend>Contactenos!</legend>
+          <legend>Contactenos o Cotice con Nosotros:</legend>
 
           <!-- Text input-->
-
+debugger; 
           <div class="form-group">
             <label class="col-md-4 control-label">Nombre</label>  
             <div class="col-md-4 inputGroupContainer">
@@ -615,10 +615,20 @@
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+            <div class="col-sm-4 col-md-4 col-xs-4">
                     &copy; 2017 <a target="_blank" href="#">Traducciones Chile Global spa</a>. All Rights Reserved.
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4 col-xs-4 col-md-4">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="https://www.facebook.com/TranslationsChileGlobal/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/ch_translate" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://cl.linkedin.com/in/michael-truitt-johnson-b6466b6a" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                       </div>
+                    </div>
+                <div class="col-sm-4 col-xs-4 col-md-4">
                     <ul class="pull-right">
                         <li><a href="#main-slider">Home</a></li>
                         <li><a href="#feature">Acerca de Nosotros</a></li>
@@ -630,7 +640,7 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
