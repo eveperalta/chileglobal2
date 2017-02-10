@@ -23,26 +23,6 @@
 <body class="homepage">
 
     <header id="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>+56 948930905</p></div>
-                    </div>
-                    <div class="col-sm-6 col-xs-8">
-                       <div class="social">
-                            <ul class="social-share">
-                                <li><a href="https://www.facebook.com/TranslationsChileGlobal/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/ch_translate" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://cl.linkedin.com/in/michael-truitt-johnson-b6466b6a" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                       </div>
-                    </div>
-                </div>
-            </div><!--/.container-->
-        </div><!--/.top-bar-->
-
         <nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -52,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
- <!-- reemplazar logo--> <a class="navbar-brand" href="index.html"><img src="" alt="logo"></a>
+ <!-- reemplazar logo--> <a class="navbar-brand" href="index.html"><img src="images/slider/logo.png" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -183,7 +163,7 @@
                         <div class="media-body">
                             <h3 class="media-heading">Servicio de Intérpretes</h3>
                             <p>Te proponemos el método de interpretación que mejor se adapte a tus necesidades y al contexto de tu evento</p>
-                            <br>
+
                         </div>
                     </div>
                 </div>
@@ -444,6 +424,7 @@
                     <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="pull-left">
                             <i class="fa fa-phone"></i>
+                            <div id="SkypeButton_Call_info_622320_1"></div>
                         </div>
                         <div class="media-body">
                             <h2>Necesita más información?</h2>
@@ -530,7 +511,7 @@
           <legend>Contactenos o Cotice con Nosotros:</legend>
 
           <!-- Text input-->
-debugger; 
+
           <div class="form-group">
             <label class="col-md-4 control-label">Nombre</label>  
             <div class="col-md-4 inputGroupContainer">
@@ -615,8 +596,8 @@ debugger;
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
-            <div class="col-sm-4 col-md-4 col-xs-4">
-                    &copy; 2017 <a target="_blank" href="#">Traducciones Chile Global spa</a>. All Rights Reserved.
+            <div class="col-sm-3 col-md-3 col-xs-3">
+                    &copy; 2017 <a target="_blank" href="#">Traducciones Chile Global spa</a>.
                 </div>
                 <div class="col-sm-4 col-xs-4 col-md-4">
                        <div class="social">
@@ -624,14 +605,13 @@ debugger;
                                 <li><a href="https://www.facebook.com/TranslationsChileGlobal/" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://twitter.com/ch_translate" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="https://cl.linkedin.com/in/michael-truitt-johnson-b6466b6a" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
                        </div>
                     </div>
                 <div class="col-sm-4 col-xs-4 col-md-4">
                     <ul class="pull-right">
                         <li><a href="#main-slider">Home</a></li>
-                        <li><a href="#feature">Acerca de Nosotros</a></li>
+                        <li><a href="#feature">Nosotros</a></li>
                         <li><a href="#services">Servicios</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
@@ -646,5 +626,16 @@ debugger;
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+     <script type="text/javascript">
+     Skype.ui({
+     "name": "dropdown",
+     "element": "SkypeButton_Call_info_622320_1",
+     "participants": ["info_622320"]
+     });
+     </script>
+
+
+
 </body>
 </html>
