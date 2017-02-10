@@ -5,6 +5,10 @@
 *******Typography******
 **************************/
 
+.boton{
+  color: #fff;
+}
+#success_message{ display: none;} /*contact form*/
 body {
   background: #fff;
   font-family: 'Open Sans', sans-serif;
